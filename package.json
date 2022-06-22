@@ -43,7 +43,9 @@
   "author": "Hossein Zare",
   "main": "index.js",
   "types": "index.d.ts",
-  "dependencies": {},
+  "dependencies": {
+    "react-native-dimension": "^1.0.6"
+  },
   "peerDependencies": {
     "react": "*",
     "react-native": "*"

@@ -24,7 +24,7 @@ import {
     Platform,
     StyleSheet,
 } from 'react-native';
-
+import { width} from 'react-native-dimension'
 const { height: WINDOW_HEIGHT } = Dimensions.get('window');
 
 import Colors from '../constants/colors';
@@ -684,9 +684,14 @@ function Picker({
 
         if (disableBorderRadius && open) {
             return direction === 'top' ? {
+                borderRadius:width(10),
+
                 borderBottomLeftRadius: 0,
                 borderBottomRightRadius: 0,
+
             } : {
+                borderRadius:width(10),
+
                 borderTopLeftRadius: 0,
                 borderTopRightRadius: 0,
             };
