@@ -1799,7 +1799,7 @@ function Picker({
 
     return (
         <View style={_containerStyle} {...containerProps}>
-            <TouchableOpacity style={[_style,{borderRadius:width(7)}]} onPress={__onPress} onLayout={__onLayout} {...props} ref={onRef} pointerEvents={pointerEvents} disabled={disabled} testID={testID}>
+            <TouchableOpacity style={[_style,{borderRadius:width(5)}]} onPress={__onPress} onLayout={__onLayout} {...props} ref={onRef} pointerEvents={pointerEvents} disabled={disabled} testID={testID}>
                 {_BodyComponent}
                 {_ArrowComponent}
             </TouchableOpacity>
